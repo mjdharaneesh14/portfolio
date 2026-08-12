@@ -7,8 +7,8 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 px-4 sm:px-8 border-t border-slate-200/80">
       <div className="max-w-5xl mx-auto space-y-12">
-        {/* Section Header */}
-        <div className="space-y-1.5 pb-4 border-b border-slate-200">
+        {/* Section Header - Centered */}
+        <div className="space-y-2 text-center max-w-2xl mx-auto pb-4 border-b border-slate-200">
           <div className="text-xs font-bold tracking-widest text-slate-500 uppercase">
             05 / DIRECT CONTACT
           </div>
@@ -17,14 +17,15 @@ export default function Contact() {
           </h2>
         </div>
 
+        {/* Centered Contact Card */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.35 }}
-          className="p-6 sm:p-8 rounded-xl border border-slate-200 bg-white space-y-6 max-w-2xl hover:shadow-xs transition-shadow"
+          className="p-6 sm:p-8 rounded-xl border border-slate-200 bg-white space-y-6 max-w-2xl mx-auto hover:shadow-xs transition-shadow text-left"
         >
-          <div className="space-y-2">
+          <div className="space-y-2 text-center">
             <h3 className="text-xl font-bold text-slate-950">
               Direct Communication Channels
             </h3>
@@ -37,12 +38,12 @@ export default function Contact() {
             {/* Email Link */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-lg border border-slate-200 bg-slate-50/70">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-md bg-white border border-slate-200 text-slate-700">
+                <div className="p-2 rounded-md bg-white border border-slate-200 text-slate-700 shrink-0">
                   <MailIcon className="w-4 h-4" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <span className="text-[10px] text-slate-500 font-bold block uppercase tracking-wider">EMAIL</span>
-                  <span className="font-semibold text-slate-900">{profileData.email}</span>
+                  <span className="font-semibold text-slate-900 truncate block">{profileData.email}</span>
                 </div>
               </div>
               <a
@@ -57,7 +58,7 @@ export default function Contact() {
             {/* Phone Link */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-lg border border-slate-200 bg-slate-50/70">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-md bg-white border border-slate-200 text-slate-700">
+                <div className="p-2 rounded-md bg-white border border-slate-200 text-slate-700 shrink-0">
                   <PhoneIcon className="w-4 h-4" />
                 </div>
                 <div>
@@ -76,7 +77,7 @@ export default function Contact() {
             {/* WhatsApp Link */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-lg border border-emerald-600/30 bg-emerald-50/60">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-md bg-white border border-emerald-200 text-emerald-600">
+                <div className="p-2 rounded-md bg-white border border-emerald-200 text-emerald-600 shrink-0">
                   <WhatsappIcon className="w-4 h-4" />
                 </div>
                 <div>
@@ -99,12 +100,12 @@ export default function Contact() {
             {/* GitHub Profile Link */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-lg border border-slate-200 bg-slate-50/70">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-md bg-white border border-slate-200 text-slate-700">
+                <div className="p-2 rounded-md bg-white border border-slate-200 text-slate-700 shrink-0">
                   <GithubIcon className="w-4 h-4" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <span className="text-[10px] text-slate-500 font-bold block uppercase tracking-wider">GITHUB PROFILE</span>
-                  <span className="font-semibold text-slate-900">github.com/mjdharaneesh14</span>
+                  <span className="font-semibold text-slate-900 truncate block">github.com/mjdharaneesh14</span>
                 </div>
               </div>
               <a

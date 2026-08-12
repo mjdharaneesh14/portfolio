@@ -18,7 +18,6 @@ export default function Navbar() {
     { name: 'Work', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
-    { name: 'Roadmap', href: '#roadmap' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -41,7 +40,7 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop Links */}
+        {/* Desktop Links: Work | Skills | Education | Contact */}
         <nav className="hidden md:flex items-center gap-8 text-xs sm:text-sm font-semibold tracking-wide">
           {navLinks.map((link) => (
             <a
