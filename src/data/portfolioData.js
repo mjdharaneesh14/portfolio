@@ -57,21 +57,38 @@ export const skillsGrouped = [
 
 export const educationList = [
   {
-    degree: "B.E. in Electronics and Communication Engineering",
+    degree: "B.E. in Electronics and Communication Engineering (ECE)",
     institution: "Selvam College of Technology",
     period: "2021 — 2025",
-    description: "Four-year engineering degree establishing strong analytical problem solving, digital logic, and software-hardware fundamentals."
+    description: "Four-year engineering degree establishing strong analytical problem solving, digital logic, microprocessors, and software-hardware fundamentals.",
+    highlights: ["Analytical Problem Solving", "Digital Logic", "Microprocessors", "System Logic"]
   },
   {
-    degree: "Embedded Systems Engineering Internship",
-    institution: "Core Electronics Training Center",
-    period: "Internship",
-    description: "Practical engineering internship focusing on microcontroller logic, circuit testing, and hardware diagnostics."
+    degree: "Govt. Skill Training Certificate in Electronics & Hardware",
+    institution: "TNSDC & Govt. of Tamil Nadu",
+    period: "2022",
+    description: "State government certified skill training program in electrical hardware systems, circuit assembly, and electronic testing equipment.",
+    highlights: ["TNSDC Certified", "Hardware Testing", "Circuit Assembly"]
   },
   {
-    degree: "Electronics & Hardware Certification",
-    institution: "Government of Tamil Nadu",
-    period: "Certification",
-    description: "Certified program validating technical proficiency in electrical hardware systems and component testing."
+    degree: "Embedded Systems Internship Training",
+    institution: "Durga Tech",
+    period: "2023",
+    description: "Practical technical internship focusing on microcontroller logic, circuit testing, sensor interfaces, and hardware diagnostics.",
+    highlights: ["Microcontroller Logic", "Hardware Diagnostics", "Sensor Interfaces"]
+  },
+  {
+    degree: "IT Support & Development Training (ISDTP)",
+    institution: "Selvam College of Technology",
+    period: "2022",
+    description: "Comprehensive development program covering software fundamentals and application modules.",
+    highlights: ['MS-Word & MS-Excel (Achieved "A+" Grade)', "Java Programming Module", "C Programming Module"]
+  },
+  {
+    degree: "LED Lights Assembling & Manufacturing Technology",
+    institution: "One-Day Technical Workshop",
+    period: "2024",
+    description: "Hands-on manufacturing workshop covering LED circuit assembly, driver electronics, and hardware component testing technology.",
+    highlights: ["LED Assembly", "Manufacturing Tech", "Driver Electronics"]
   }
 ];
